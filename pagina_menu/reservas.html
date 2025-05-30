@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Your Name <your.email@example.com>">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Reservas - Grupo Las Retamas</title>
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/estilo_formulario.css">
+    <script src="../scripts/script-formulario.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Grupo Las Retamas - Alojamientos Rurales en Cuenca</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="entorno.html">Entorno</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="socios.html">Socios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reservas-form-section">
+            <form name="formReservas" action="#" method="post">
+                <h2>Datos de Reserva</h2>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="Alojamiento">Alojamiento:</label>
+                        <select id="Alojamiento" name="Alojamiento" required>
+                            <option value="">- Seleccione un alojamiento -</option>
+                            <option value="grullas">Hotel Rural Las Grullas</option>
+                            <option value="cascadas">Bungalows Las Cascadas</option>
+                            <option value="manantiales">Casas Rural Los Manantiales</option>
+                            <option value="amanecer">Casa Rural Amanecer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaEntrada">Fecha de Entrada:</label>
+                        <input type="date" id="fechaEntrada" name="fechaEntrada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaSalida">Fecha de Salida:</label>
+                        <input type="date" id="fechaSalida" name="fechaSalida" required>
+                    </div>
+                </fieldset>
+
+                <h2>Datos del Cliente</h2>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="nif">NIF / DNI:</label>
+                        <input type="text" id="nif" name="nif" pattern="[0-9]{8}[A-Z]" title="8 dígitos y mayúsculas" required>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
