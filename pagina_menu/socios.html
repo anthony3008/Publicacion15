@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony anthony@example.com">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Socios - Grupo Las Retamas</title>
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/estilos_formularios.css">
+</head>
+<body>
+    <header>
+        <h1>Grupo Las Retamas - Alojamientos Rurales en Cuenca</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="entorno.html">Entorno</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="socios.html">Socios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="socios-forms-section">
+            <form name="formAcceso" action="../php/procesar-socios.php" method="post">
+                <h2>Acceso</h2>
+                <div class="form-group-access">
+                    <p>
+                        <label for="usuarioAcceso">Usuario:</label>
+                        <input type="text" id="usuarioAcceso" name="usuarioAcceso" required>
+                    </p>
+                    <p>
+                        <label for="claveAcceso">Contraseña:</label>
+                        <input type="password" id="claveAcceso" name="claveAcceso" required>
+                    </p>
+                    <div class="form-buttons">
+                        <button type="submit">Acceder</button>
+                        <button type="reset">Limpiar</button>
+                </div>
+            </form>
+            <form name="formRegistro" action="../php/procesar-socios.php" method="post">
+                <h2>Registro de nuevo socios</h2>
+                <div class="form-group-register">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <p>
+                            <label for="nombreRegistro">Nombre:</label>
+                            <input type="text" id="nombreRegistro" name="nombreRegistro" required>
+                        </p>
+                        <p>
+                            <label for="apellidosRegistro">Apellidos:</label>
+                            <input type="text" id="apellidosRegistro" name="apellidosRegistro" required>
+                        </p>
+                        <p>
+                            <label for="direccionRegistro">Dirección:</label>
+                            <input type="text" id="direccionRegistro" name="direccionRegistro" required>
+
+                        </p>
+                        <p>
+                            <label for="telefonoRegistro">Teléfono:</label>
+                            <input type="tel" id="telefonoRegistro" name="telefonoRegistro" pattern="[0-9]{9}" title="9 dígitos" required>
+                        </p>
+                        <p>
+                            <label for="emailRegistro">Correo Electrónico:</label>
+                            <input type="email" id="emailRegistro" name="emailRegistro" required>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos de Identificación</legend>
+                        <p>
+                            <label for="usuarioRegistro">Usuario / Logion:</label>
+                            <input type="text" id="usuarioRegistro" name="usuarioRegistro" required>
+                        </p>
+                        <p>
+                            <label for="claveRegistro">Contraseña:</label>
+                            <input type="password" id="claveRegistro" name="claveRegistro" required>
+                        </p>
+                        <p>
+                            <label for="confirmarClaveRegistro">Confirmar Contraseña:</label>
+                            <input type="password" id="confirmarClaveRegistro" name="confirmarClaveRegistro" required>
+                        </p>
+                    </fieldset>
+                    <div class="form-buttons">
+                        <button type="submit">Registrar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
